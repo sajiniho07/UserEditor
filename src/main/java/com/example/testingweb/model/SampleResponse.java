@@ -1,4 +1,4 @@
-package com.example.testingweb.models;
+package com.example.testingweb.model;
 public class SampleResponse {
 	private String message;
 	private long id;

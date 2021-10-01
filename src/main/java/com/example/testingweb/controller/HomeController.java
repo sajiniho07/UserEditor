@@ -1,8 +1,8 @@
 package com.example.testingweb.controller;
 
 import com.example.testingweb.helper.EmployeeRepository;
-import com.example.testingweb.models.Employee;
-import com.example.testingweb.models.SampleResponse;
+import com.example.testingweb.model.Employee;
+import com.example.testingweb.model.SampleResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-
 @RestController
 public class HomeController {
 
@@ -26,10 +25,9 @@ public class HomeController {
         this.repository = repository;
     }
 
-    @RequestMapping("/")
-    public @ResponseBody
-    String greeting() {
-        return "Hello, World";
+    @GetMapping("/")
+    public String index() {
+        return "index";
     }
 
     @RequestMapping("/simpleResponse")

@@ -1,4 +1,4 @@
-package com.example.testingweb.models;
+package com.example.testingweb.model;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

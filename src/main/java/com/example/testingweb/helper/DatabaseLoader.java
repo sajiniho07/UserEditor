@@ -1,6 +1,6 @@
 package com.example.testingweb.helper;
 
-import com.example.testingweb.models.Employee;
+import com.example.testingweb.model.Employee;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
